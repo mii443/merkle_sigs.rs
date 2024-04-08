@@ -11,11 +11,11 @@ repository    = "https://github.com/SpinResearch/merkle_sigs.rs"
 edition       = "2018"
 
 [dependencies]
-ring         = "0.16.15"
-lamport_sigs = "0.7.0"
+ring         = "0.17.8"
+lamport_sigs = { git = "https://github.com/mii443/lamport_sigs.rs" }
 
 [dependencies.merkle]
-version = "^1.11.0"
+git = "https://github.com/mii443/merkle.rs"
 features = ["serialization-protobuf"]
 
 [package.metadata.release]
